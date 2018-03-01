@@ -4,7 +4,8 @@
   "description": "A starter kit for building a custom Cisco Spark bot with Botkit Studio",
   "main": "bot.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "cross-env SPARK_TOKEN=YTlhNzdjM2MtNTk3ZC00OTAyLTgyOTEtYjNjYTQ0ZWY1MTEyMzM1MGY5YTAtNGJm PUBLIC_URL=https://traduce.herokuapp.com SECRET=empty node helloworld.js"
+
   },
   "dependencies": {
     "body-parser": "^1.15.2",
@@ -14,7 +15,11 @@
     "express": "^4.14.0",
     "node-env-file": "^0.1.8",
     "request": "^2.79.0",
-    "wordfilter": "^0.2.6"
+    "ciscospark-websocket-events": "^1.1.0",
+    "node-emoji": "^1.5.1",
+    "wordfilter": "^0.2.6",
+    "cross-env": "^5.1.3"
+
   },
   "devDependencies": {},
   "repository": {
@@ -32,4 +37,5 @@
   ],
   "author": "ben@howdy.ai",
   "license": "ISC"
+  
 }
